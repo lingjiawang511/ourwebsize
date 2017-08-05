@@ -1,0 +1,109 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>{dede:field.title/}_{dede:global.cfg_webname/}</title>
+<meta name="keywords" content="{dede:field name='keywords'/}" />
+<meta name="description" content="{dede:field name='description' function='html2text(@me)'/}" />
+<link type="text/css" rel="stylesheet" href="/skin/css/global.css" />
+<link type="text/css" rel="stylesheet" href="/skin/css/lib.css" />
+<link type="text/css" rel="stylesheet" href="/skin/css/style.css" />
+<script type="text/javascript" src="/skin/js/iepngfix_tilebg.js"></script>
+<script type="text/javascript" src="/skin/js/jq_min.js"></script>
+<script type="text/javascript" src="/skin/js/website_js.js"></script>
+<script type="text/javascript" src="/skin/js/global.js"></script>
+<script type="text/javascript" src="/skin/js/lang/en.js"></script>
+</head>
+
+<body>
+{dede:include filename="head.htm"/}
+<div id="content">
+  <div class="path">
+    <div class="center">
+      <div class="p">当前位置:{dede:field name='position'/}</div>
+    </div>
+  </div>
+  <div class="detail_wrap">
+    <div class="right_content"><script language="javascript" src="/skin/js/checkform.js"></script>
+      <div id="lib_feedback_form">
+        <form action="/plus/diy.php" enctype="multipart/form-data" method="post">
+          <input type="hidden" name="action" value="post" />
+          <input type="hidden" name="diyid" value="1" />
+          <input type="hidden" name="do" value="2" />
+          <div class="rows">
+            <label>姓名: <font class='fc_red'>*</font></label>
+            <span>
+            <input name="name" type="text" class="form_input" check="请正确填写姓名！~*" size="20" maxlength="20">
+            </span>
+            <div class="clear"></div>
+          </div>
+          <div class="rows">
+            <label>公司:&nbsp;&nbsp;&nbsp;</label>
+            <span>
+            <input name="company" type="text" class="form_input" size="30" maxlength="100">
+            </span>
+            <div class="clear"></div>
+          </div>
+          <div class="rows">
+            <label>电话: <font class='fc_red'>*</font></label>
+            <span>
+            <input name="phone" type="text" class="form_input" check="请正确填写电话号码！~tel|“{value}”不是一个有效的电话号码！*" size="20" maxlength="20">
+            </span>
+            <div class="clear"></div>
+          </div>
+          <div class="rows">
+            <label>手机:&nbsp;&nbsp;&nbsp;</label>
+            <span>
+            <input name="mobile" type="text" class="form_input" check="请正确填写手机号码！~mobile|“{value}”不是一个有效的手机号码！" size="20" maxlength="20">
+            </span>
+            <div class="clear"></div>
+          </div>
+          <div class="rows">
+            <label>邮箱:&nbsp;&nbsp;&nbsp;</label>
+            <span>
+            <input name="email" type="text" class="form_input" check="请正确填写邮箱地址！~email|“{value}”不是一个有效的邮箱地址！" size="30" maxlength="100">
+            </span>
+            <div class="clear"></div>
+          </div>
+          <div class="rows">
+            <label>QQ:&nbsp;&nbsp;&nbsp;</label>
+            <span>
+            <input name="qq" type="text" class="form_input" size="10" maxlength="10">
+            </span>
+            <div class="clear"></div>
+          </div>
+          <div class="rows">
+            <label>主题: <font class='fc_red'>*</font></label>
+            <span>
+            <input name="subject" type="text" class="form_input" check="请正确填写主题！~*" size="50" maxlength="30">
+            </span>
+            <div class="clear"></div>
+          </div>
+          <div class="rows">
+            <label>内容: <font class='fc_red'>*</font></label>
+            <span>
+            <textarea name="message" class="form_area contents" check="请正确填写内容！~*"></textarea>
+            </span>
+            <div class="clear"></div>
+          </div>
+          <div class="rows">
+            <div class="clear"></div>
+          </div>
+          <input type="hidden" name="dede_fields" value="name,text;company,text;phone,text;mobile,text;email,text;subject,text;message,text;qq,text">
+          <input type="hidden" name="dede_fieldshash" value="00f791b182f1b2e1c0489a0be64b617f">
+          <div class="rows">
+            <label></label>
+            <span>
+            <input name="Submit" type="submit" class="form_gory_button" value="提 交">
+            </span>
+            <div class="clear"></div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+{dede:include filename="footer.htm"/}
+</body>
+</html>

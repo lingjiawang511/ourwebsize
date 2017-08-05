@@ -1,0 +1,1 @@
+<div class="news_list"><a href="[field:arcurl /]">[field:title /]</a> </div>

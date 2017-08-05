@@ -1,0 +1,1 @@
+<img id="bImg" src="[field:imgsrc/]" />

@@ -1,0 +1,1 @@
+<li class="last"><img src="[field:imgsrc/]" width='98' height='98' /></li>

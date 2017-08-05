@@ -1,0 +1,1 @@
+ <a class="cate_a" href="[field:typeurl/]">[field:typename/]</a> 

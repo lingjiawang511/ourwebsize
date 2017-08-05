@@ -1,0 +1,1 @@
+<div class='adlist'><a href='[field:arcurl /]' target='_blank'><img src='[field:picname/]' width="280" height="275"></a></div>

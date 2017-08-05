@@ -1,0 +1,1 @@
+<div class="nav_list"> <img src="/skin/images/index_ico_4.jpg" /> <a href="[field:typelink /]">[field:typename /]</a> </div>

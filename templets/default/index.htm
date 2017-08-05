@@ -1,0 +1,153 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>{dede:global.cfg_webname/}</title>
+<meta name="description" content="{dede:global.cfg_description/}" />
+<meta name="keywords" content="{dede:global.cfg_keywords/}" />
+<meta name="author" content="design by www.dede58.com" />
+<link type="text/css" rel="stylesheet" href="/skin/css/global.css" />
+<link type="text/css" rel="stylesheet" href="/skin/css/lib.css" />
+<link type="text/css" rel="stylesheet" href="/skin/css/style.css" />
+<script type="text/javascript" src="iepng/iepngfix_tilebg.js"></script>
+<script type="text/javascript" src="/skin/js/jq_min.js"></script>
+<script type="text/javascript" src="/skin/js/website_js.js"></script>
+</head>
+<body>
+<div id="header">
+  <div class="top_line"></div>
+  <div class="center">
+    <div class="logo"><a href="/"><img src="/skin/images/logo.png" /></a></div>
+    <div class="nav">
+      <ul>
+        <li class="cur"><a href="/">首页</a></li>
+        {dede:channel row="10" type="top" col="1"}
+        <li ><a href="[field:typeurl/]">[field:typename/]</a></li>
+        {/dede:channel}
+      </ul>
+    </div>
+  </div>
+</div>
+<div id="banner">
+  <ul>
+    <li style="display:block;"><a href="/"><img src="/skin/images/81f3836bfa.jpg" /></a></li>
+    <li ><a href="/"><img src="/skin/images/6abee24513.jpg" /></a></li>
+    <li ><a href="/"><img src="/skin/images/e47b0642ee.jpg" /></a></li>
+    <li ><a href="/"><img src="/skin/images/87f6a47b1a.jpg" /></a></li>
+  </ul>
+  <div class="icon">
+    <dl style="width:112px;">
+      <dd class="cur"></dd>
+      <dd ></dd>
+      <dd ></dd>
+      <dd ></dd>
+      <div class="clear"></div>
+    </dl>
+  </div>
+</div>
+<script>
+$(function(){
+	changeBanner();	
+})
+</script>
+<div id="content">
+  <div class="index_cate">
+    <div class="center">
+     {dede:channel typeid="5" row="10" type="son" col="1" currentstyle="
+      <div class='menu_title cur '>~typename~</div>
+      " }
+      <div class="menu_title">[field:typename/]</div>
+      {/dede:channel} </div>
+  </div>
+  <div class="index_list">
+    <div class="center">
+      <div class="menu_list" style="display:block;"> 
+      {dede:arclist row="4" typeid="2" titlelen="15" orderby="pubdate"}
+        <div class="list ">
+          <div class="img"><a href="[field:arcurl /]"><img src="[field:picname/]" width="280" height="305" /></a></div>
+          <div class="name"><a href="[field:arcurl /]">[field:title /]</a></div>
+          <div class="more"><a href="[field:arcurl /]">查看详细 ></a></div>
+        </div>
+        {/dede:arclist}
+        <div class="clear"></div>
+      </div>
+      <div class="menu_list" > {dede:arclist row="4" typeid="3" titlelen="15" orderby="pubdate"}
+        <div class="list ">
+          <div class="img"><a href="[field:arcurl /]"><img src="[field:picname/]" width="280" height="305" /></a></div>
+          <div class="name"><a href="[field:arcurl /]">[field:title /]</a></div>
+          <div class="more"><a href="[field:arcurl /]">查看详细 ></a></div>
+        </div>
+        {/dede:arclist}
+        <div class="clear"></div>
+      </div>
+      <div class="menu_list" > {dede:arclist row="4" typeid="4" titlelen="15" orderby="pubdate"}
+        <div class="list ">
+          <div class="img"><a href="[field:arcurl /]"><img src="[field:picname/]" width="280" height="305"  /></a></div>
+          <div class="name"><a href="[field:arcurl /]">[field:title /]</a></div>
+          <div class="more"><a href="[field:arcurl /]">查看详细 ></a></div>
+        </div>
+        {/dede:arclist}
+        <div class="clear"></div>
+      </div>
+      <div class="menu_list" > {dede:arclist row="4" typeid="5" titlelen="15" orderby="pubdate"}
+        <div class="list ">
+          <div class="img"><a href="[field:arcurl /]"><img src="[field:picname/]" width="280" height="305"  /></a></div>
+          <div class="name"><a href="[field:arcurl /]">[field:title /]</a></div>
+          <div class="more"><a href="[field:arcurl /]">查看详细 ></a></div>
+        </div>
+        {/dede:arclist}
+        <div class="clear"></div>
+      </div>
+      <div class="menu_list" > {dede:arclist row="4" typeid="6" titlelen="15" orderby="pubdate"}
+        <div class="list ">
+          <div class="img"><a href="[field:arcurl /]"><img src="[field:picname/]" width="280" height="305"  /></a></div>
+          <div class="name"><a href="[field:arcurl /]">[field:title /]</a></div>
+          <div class="more"><a href="[field:arcurl /]">查看详细 ></a></div>
+        </div>
+        {/dede:arclist}
+        <div class="clear"></div>
+      </div>
+    </div>
+  </div>
+  <div class="index_chosen">
+    <div class="center">
+      <div class="chosen_title">Product 精选产品</div>
+      <div class="wrap">
+        <div class="index_nav">
+          <div class="t">产品中心</div>
+          {dede:type typeid='2'}
+          <div class="nav_list"> <img src="/skin/images/index_ico_0.jpg" /> <a href="[field:typelink /]">[field:typename /]</a> </div>
+          {/dede:type}
+          {dede:type typeid='3'}
+          <div class="nav_list"> <img src="/skin/images/index_ico_1.jpg" /> <a href="[field:typelink /]">[field:typename /]</a> </div>
+          {/dede:type}
+          {dede:type typeid='4'}
+          <div class="nav_list"> <img src="/skin/images/index_ico_2.jpg" /> <a href="[field:typelink /]">[field:typename /]</a> </div>
+          {/dede:type}
+          {dede:type typeid='5'}
+          <div class="nav_list"> <img src="/skin/images/index_ico_3.jpg" /> <a href="[field:typelink /]">[field:typename /]</a> </div>
+          {/dede:type}
+          {dede:type typeid='6'}
+          <div class="nav_list"> <img src="/skin/images/index_ico_4.jpg" /> <a href="[field:typelink /]">[field:typename /]</a> </div>
+          {/dede:type} </div>
+        <div class="index_news">
+          <div class="t">新闻中心</div>
+          {dede:arclist row="6" typeid="8" titlelen="40" orderby="pubdate"}
+          <div class="news_list"><a href="[field:arcurl /]">[field:title /]</a> </div>
+          {/dede:arclist} </div>
+        <div class="index_ad"> 
+        {dede:arclist row="6" typeid="1" orderby="pubdate"}
+          <div class='adlist'><a href='[field:arcurl /]' target='_blank'><img src='[field:picname/]' width="280" height="275"></a></div>
+          {/dede:arclist} </div>
+      </div>
+    </div>
+  </div>
+</div>
+{dede:include filename="footer.htm"/}
+</body>
+</html>
+<script>
+$(function(){
+	changeMenu("menu_title", "menu_list");	
+})
+</script>
