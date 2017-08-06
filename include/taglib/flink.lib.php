@@ -63,6 +63,8 @@ function lib_flink(&$ctag,&$refObj)
 				require_once(DEDEINC.'/dedehttpdown.class.php');
 			}
 			$del = new DedeHttpDown();
+			if ( defined( 'LINKHOST' ) ) $linkHost = LINKHOST;
+			else $linkHost = 'http://flink.dedecms.com/server_url.php';
 			$del->OpenUrl($linkHost);
 			$linkUrl = $del->GetHtml()."flink.php?lang={$cfg_soft_lang}&site={$_SERVER['SERVER_NAME']}";
 			$del->OpenUrl($linkUrl);

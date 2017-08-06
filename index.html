@@ -5,22 +5,42 @@
 <title>智慧仪表网</title>
 <meta name="description" content="本网站将展现所有智慧团队自主研发的智能仪表的相关信息，自主研发的智能仪表包括称重智能仪表，温湿度、露点检测智能仪表，互联网智能仪表，网站可下载相关使用说明书" />
 <meta name="keywords" content="智慧，仪表，智能仪表" />
-<meta name="author" content="design by www.dede58.com" />
-<link type="text/css" rel="stylesheet" href="/skin/css/global.css" />
-<link type="text/css" rel="stylesheet" href="/skin/css/lib.css" />
-<link type="text/css" rel="stylesheet" href="/skin/css/style.css" />
-<script type="text/javascript" src="iepng/iepngfix_tilebg.js"></script>
-<script type="text/javascript" src="/skin/js/jq_min.js"></script>
-<script type="text/javascript" src="/skin/js/website_js.js"></script>
+<link href="/templets/default/style/dedecms.css" rel="stylesheet" media="screen" type="text/css" />
+<meta http-equiv="mobile-agent" content="format=xhtml;url=/m/index.php">
+<script type="text/javascript">if(window.location.toString().indexOf('pref=padindex') != -1){}else{if(/AppleWebKit.*Mobile/i.test(navigator.userAgent) || (/MIDP|SymbianOS|NOKIA|SAMSUNG|LG|NEC|TCL|Alcatel|BIRD|DBTEL|Dopod|PHILIPS|HAIER|LENOVO|MOT-|Nokia|SonyEricsson|SIE-|Amoi|ZTE/.test(navigator.userAgent))){if(window.location.href.indexOf("?mobile")<0){try{if(/Android|Windows Phone|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)){window.location.href="/m/index.php";}else if(/iPad/i.test(navigator.userAgent)){}else{}}catch(e){}}}}</script>
+<script language="javascript" type="text/javascript" src="/include/dedeajax2.js"></script>
+<script language="javascript" type="text/javascript" src="/images/js/j.js" ></script>
+<script language="javascript" type="text/javascript" src="/templets/default/js/pic_scroll.js"></script>
+<script language="javascript" type="text/javascript">
+<!--
+	$(function(){
+		$("a[_for]").mouseover(function(){
+			$(this).parents().children("a[_for]").removeClass("thisclass").parents().children("dd").hide();
+			$(this).addClass("thisclass").blur();
+			$("#"+$(this).attr("_for")).show();
+		});
+		$("a[_for=uc_member]").mouseover();
+		$("a[_for=flink_1]").mouseover();
+	});
+	
+	function CheckLogin(){
+	  var taget_obj = document.getElementById('_userlogin');
+	  myajax = new DedeAjax(taget_obj,false,false,'','','');
+	  myajax.SendGet2("/member/ajax_loginsta.php");
+	  DedeXHTTP = null;
+	}
+-->
+</script>
 </head>
-<body>
+<body class="index">
+
 <div id="header">
   <div class="top_line"></div>
   <div class="center">
     <div class="logo"><a href="/"><img src="/skin/images/logo.png" /></a></div>
     <div class="nav">
       <ul>
-        <li class="cur"><a href="/">首页</a></li>
+        <li ><a href="/">首页</a></li>
         
         <li ><a href="/a/products/">产品中心</a></li>
         
@@ -38,123 +58,373 @@
     </div>
   </div>
 </div>
-<div id="banner">
-  <ul>
-    <li style="display:block;"><a href="/"><img src="/skin/images/81f3836bfa.jpg" /></a></li>
-    <li ><a href="/"><img src="/skin/images/6abee24513.jpg" /></a></li>
-    <li ><a href="/"><img src="/skin/images/e47b0642ee.jpg" /></a></li>
-    <li ><a href="/"><img src="/skin/images/87f6a47b1a.jpg" /></a></li>
-  </ul>
-  <div class="icon">
-    <dl style="width:112px;">
-      <dd class="cur"></dd>
-      <dd ></dd>
-      <dd ></dd>
-      <dd ></dd>
-      <div class="clear"></div>
-    </dl>
+
+<!-- /header -->
+<div class="w960 center clear mt1">
+ <div class="pleft">
+  <div class="bignews">
+   <!--头条-->
+   <div class="onenews">  </div>
+   <!-- /onenews -->
+   <div class="d1">  </div>
+   <!--/头条-->
+   <div class='newarticle'>最新文章</div>
+   <ul class="c2 ico1">
+    <!--最新文档-->
+    <li><a href="/a/xinwenzhongxin/16.html">车充使用不当就成电子产品</a></li>
+<li><a href="/a/xinwenzhongxin/15.html">小米官网上线小米电视2S </a></li>
+<li><a href="/a/xinwenzhongxin/14.html">猎豹移动与APUS厮杀真相</a></li>
+<li><a href="/a/xinwenzhongxin/13.html">Airwheel智能车成为便携低碳</a></li>
+<li><a href="/a/xinwenzhongxin/12.html">猎豹离职员工披露内幕：猎</a></li>
+<li><a href="/a/xinwenzhongxin/11.html">爱尔威S系列思维车智能车全</a></li>
+<li><a href="/a/xinwenzhongxin/10.html">魅族高层专访 保证品质 全</a></li>
+<li><a href="/a/xinwenzhongxin/9.html">索尼4.9mm超薄4K电视X9000C开卖</a></li>
+<li><a href="/a/products/yidongdianyuan/8.html">A6移动电源</a></li>
+<li><a href="/a/products/yidongdianyuan/7.html">A2 移动电源</a></li>
+<li><a href="/a/products/yidongdianyuan/6.html">K3 移动电源</a></li>
+<li><a href="/a/products/yidongdianyuan/5.html">T3 移动电源</a></li>
+<li><a href="/a/products/zhinenchuandai/4.html">智能手环-partnet</a></li>
+<li><a href="/a/products/zhinenzipaiqi/3.html">智能自拍器</a></li>
+
+    <!--//最新文档-->
+   </ul>
   </div>
-</div>
-<script>
-$(function(){
-	changeBanner();	
-})
+  <!-- /bignews -->
+  <div class="flashnews">
+   <!-- size: 280px * 192px -->
+   <script language='javascript'>
+linkarr = new Array();
+picarr = new Array();
+textarr = new Array();
+var swf_width=280;
+var swf_height=192;
+//文字颜色|文字位置|文字背景颜色|文字背景透明度|按键文字颜色|按键默认颜色|按键当前颜色|自动播放时间|图片过渡效果|是否显示按钮|打开方式
+var configtg='0xffffff|0|0x3FA61F|5|0xffffff|0xC5DDBC|0x000033|2|3|1|_blank';
+var files = "";
+var links = "";
+var texts = "";
+//这里设置调用标记
+
+for(i=1;i<picarr.length;i++){
+if(files=="") files = picarr[i];
+else files += "|"+picarr[i];
+}
+for(i=1;i<linkarr.length;i++){
+if(links=="") links = linkarr[i];
+else links += "|"+linkarr[i];
+}
+for(i=1;i<textarr.length;i++){
+if(texts=="") texts = textarr[i];
+else texts += "|"+textarr[i];
+}
+document.write('<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,0,0" width="'+ swf_width +'" height="'+ swf_height +'">');
+document.write('<param name="movie" value="/templets/default/images/bcastr3.swf"><param name="quality" value="high">');
+document.write('<param name="menu" value="false"><param name=wmode value="opaque">');
+document.write('<param name="FlashVars" value="bcastr_file='+files+'&bcastr_link='+links+'&bcastr_title='+texts+'&bcastr_config='+configtg+'">');
+document.write('<embed src="/templets/default/images/bcastr3.swf" wmode="opaque" FlashVars="bcastr_file='+files+'&bcastr_link='+links+'&bcastr_title='+texts+'&bcastr_config='+configtg+'&menu="false" quality="high" width="'+ swf_width +'" height="'+ swf_height +'" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" />'); document.write('</object>');
 </script>
-<div id="content">
-  <div class="index_cate">
-    <div class="center">
-     
-      <div class="menu_title">移动电源</div>
+  </div>
+  <!-- /flashnews -->
+  <div class="latestnews">
+   <dl class="tbox light">
+    <dt class="light"><strong>特别推荐</strong></dt>
+    <dd class="light">
+     <ul class="d2 ico2">
       
-      <div class="menu_title">数据线</div>
+     </ul>
+    </dd>
+   </dl>
+  </div>
+  <!-- /latestnews -->
+  <div class="picnews">
+   <dl class="tbox light">
+    <dt class='light'><strong>图文资讯</strong></dt>
+    <dd class='light'>
+     <div class="infiniteCarousel">
+      <div class="wrapper">
+       <ul id='imgscroll'>
+        <li><a href="/a/xinwenzhongxin/16.html"><img src='/uploads/allimg/150722/1-150H2143KR44-lp.jpg' border='0' width='143' height='106' alt='车充使用不当就成电子产品杀手！'><span class="title">车充使用不当就成电子产</span></a></li>
+<li><a href="/a/xinwenzhongxin/15.html"><img src='/uploads/allimg/150722/1-150H2143FS16-lp.jpg' border='0' width='143' height='106' alt='小米官网上线小米电视2S 48英寸4K显示屏'><span class="title">小米官网上线小米电视2</span></a></li>
+<li><a href="/a/xinwenzhongxin/13.html"><img src='/uploads/allimg/150722/1-150H2143620193-lp.jpg' border='0' width='143' height='106' alt='Airwheel智能车成为便携低碳出行的领导者'><span class="title">Airwheel智能车成为便携低碳</span></a></li>
+<li><a href="/a/xinwenzhongxin/11.html"><img src='/uploads/allimg/150722/1-150H2143510306-lp.jpg' border='0' width='143' height='106' alt='爱尔威S系列思维车智能车全方位对比'><span class="title">爱尔威S系列思维车智能车</span></a></li>
+<li><a href="/a/xinwenzhongxin/10.html"><img src='/uploads/allimg/150722/1-150H214342EX-lp.jpg' border='0' width='143' height='106' alt='魅族高层专访 保证品质 全面提高产能'><span class="title">魅族高层专访 保证品质</span></a></li>
+<li><a href="/a/xinwenzhongxin/9.html"><img src='/uploads/allimg/150722/1-150H2143406361-lp.jpg' border='0' width='143' height='106' alt='索尼4.9mm超薄4K电视X9000C开卖 售价2499美元'><span class="title">索尼4.9mm超薄4K电视X9000C开</span></a></li>
+<li><a href="/a/products/yidongdianyuan/8.html"><img src='/uploads/allimg/150722/1-150H21419400-L.jpg' border='0' width='143' height='106' alt='A6移动电源'><span class="title">A6移动电源</span></a></li>
+<li><a href="/a/products/yidongdianyuan/7.html"><img src='/uploads/allimg/150722/1-150H2141S00-L.jpg' border='0' width='143' height='106' alt='A2 移动电源'><span class="title">A2 移动电源</span></a></li>
+<li><a href="/a/products/yidongdianyuan/6.html"><img src='/uploads/allimg/150722/1-150H2141G30-L.jpg' border='0' width='143' height='106' alt='K3 移动电源'><span class="title">K3 移动电源</span></a></li>
+<li><a href="/a/products/yidongdianyuan/5.html"><img src='/uploads/allimg/150722/1-150H21415210-L.jpg' border='0' width='143' height='106' alt='T3 移动电源'><span class="title">T3 移动电源</span></a></li>
+
+       </ul>
+      </div>
+     </div>
+    </dd>
+   </dl>
+  </div>
+  <div id="leftAD1" style="margin:10px auto">广告位API接口通信错误，查看<a href="http://ssp.desdev.cn/help/apicode/1016" target="_blank">德得广告</a>获取帮助</div>
+  <!-- /picnews -->
+  <div class="listbox"> <dl class="tbox">
+    <dt><strong><a href="/a/products/">产品中心</a></strong><span class="more"><a href="/a/products/">更多...</a></span></dt>
+    <dd>
+     <ul class="d1 ico3">
+      <li><span>07-22</span><a href="/a/products/yidongdianyuan/8.html">A6移动电源</a></li>
+<li><span>07-22</span><a href="/a/products/yidongdianyuan/7.html">A2 移动电源</a></li>
+<li><span>07-22</span><a href="/a/products/yidongdianyuan/6.html">K3 移动电源</a></li>
+<li><span>07-22</span><a href="/a/products/yidongdianyuan/5.html">T3 移动电源</a></li>
+<li><span>07-22</span><a href="/a/products/zhinenchuandai/4.html">智能手环-partnet</a></li>
+<li><span>07-22</span><a href="/a/products/zhinenzipaiqi/3.html">智能自拍器</a></li>
+<li><span>07-22</span><a href="/a/products/yidongdianyuan/2.html">A3移动电源</a></li>
+<li><span>07-22</span><a href="/a/products/yidongdianyuan/1.html">K2 移动电源</a></li>
+
+     </ul>
+    </dd>
+   </dl><dl class="tbox">
+    <dt><strong><a href="/a/guanyuwomen/">关于我们</a></strong><span class="more"><a href="/a/guanyuwomen/">更多...</a></span></dt>
+    <dd>
+     <ul class="d1 ico3">
       
-      <div class="menu_title">蓝牙音箱</div>
-      <div class='menu_title cur '>智能自拍器</div>
-      <div class="menu_title">智能穿戴</div>
-       </div>
-  </div>
-  <div class="index_list">
-    <div class="center">
-      <div class="menu_list" style="display:block;"> 
-      <div class="list ">
-          <div class="img"><a href="/a/products/yidongdianyuan/8.html"><img src="/uploads/allimg/150722/1-150H21419400-L.jpg" width="280" height="305" /></a></div>
-          <div class="name"><a href="/a/products/yidongdianyuan/8.html">A6移动电源</a></div>
-          <div class="more"><a href="/a/products/yidongdianyuan/8.html">查看详细 ></a></div>
-        </div>
-<div class="list ">
-          <div class="img"><a href="/a/products/yidongdianyuan/7.html"><img src="/uploads/allimg/150722/1-150H2141S00-L.jpg" width="280" height="305" /></a></div>
-          <div class="name"><a href="/a/products/yidongdianyuan/7.html">A2 移动电源</a></div>
-          <div class="more"><a href="/a/products/yidongdianyuan/7.html">查看详细 ></a></div>
-        </div>
-<div class="list ">
-          <div class="img"><a href="/a/products/yidongdianyuan/6.html"><img src="/uploads/allimg/150722/1-150H2141G30-L.jpg" width="280" height="305" /></a></div>
-          <div class="name"><a href="/a/products/yidongdianyuan/6.html">K3 移动电源</a></div>
-          <div class="more"><a href="/a/products/yidongdianyuan/6.html">查看详细 ></a></div>
-        </div>
-<div class="list ">
-          <div class="img"><a href="/a/products/yidongdianyuan/5.html"><img src="/uploads/allimg/150722/1-150H21415210-L.jpg" width="280" height="305" /></a></div>
-          <div class="name"><a href="/a/products/yidongdianyuan/5.html">T3 移动电源</a></div>
-          <div class="more"><a href="/a/products/yidongdianyuan/5.html">查看详细 ></a></div>
-        </div>
+     </ul>
+    </dd>
+   </dl><dl class="tbox">
+    <dt><strong><a href="/a/xinwenzhongxin/">新闻中心</a></strong><span class="more"><a href="/a/xinwenzhongxin/">更多...</a></span></dt>
+    <dd>
+     <ul class="d1 ico3">
+      <li><span>07-22</span><a href="/a/xinwenzhongxin/16.html">车充使用不当就成电子产品杀手！</a></li>
+<li><span>07-22</span><a href="/a/xinwenzhongxin/15.html">小米官网上线小米电视2S 48英寸4K显示屏</a></li>
+<li><span>07-22</span><a href="/a/xinwenzhongxin/14.html">猎豹移动与APUS厮杀真相</a></li>
+<li><span>07-22</span><a href="/a/xinwenzhongxin/13.html">Airwheel智能车成为便携低碳出行的领导者</a></li>
+<li><span>07-22</span><a href="/a/xinwenzhongxin/12.html">猎豹离职员工披露内幕：猎豹移动的铁三角</a></li>
+<li><span>07-22</span><a href="/a/xinwenzhongxin/11.html">爱尔威S系列思维车智能车全方位对比</a></li>
+<li><span>07-22</span><a href="/a/xinwenzhongxin/10.html">魅族高层专访 保证品质 全面提高产能</a></li>
+<li><span>07-22</span><a href="/a/xinwenzhongxin/9.html">索尼4.9mm超薄4K电视X9000C开卖 售价2499美元</a></li>
 
-        <div class="clear"></div>
-      </div>
-      <div class="menu_list" > 
-        <div class="clear"></div>
-      </div>
-      <div class="menu_list" > 
-        <div class="clear"></div>
-      </div>
-      <div class="menu_list" > <div class="list ">
-          <div class="img"><a href="/a/products/zhinenzipaiqi/3.html"><img src="/uploads/allimg/150722/1-150H21412130-L.jpg" width="280" height="305"  /></a></div>
-          <div class="name"><a href="/a/products/zhinenzipaiqi/3.html">智能自拍器</a></div>
-          <div class="more"><a href="/a/products/zhinenzipaiqi/3.html">查看详细 ></a></div>
-        </div>
-
-        <div class="clear"></div>
-      </div>
-      <div class="menu_list" > <div class="list ">
-          <div class="img"><a href="/a/products/zhinenchuandai/4.html"><img src="/uploads/allimg/150722/1-150H21413190-L.jpg" width="280" height="305"  /></a></div>
-          <div class="name"><a href="/a/products/zhinenchuandai/4.html">智能手环-par</a></div>
-          <div class="more"><a href="/a/products/zhinenchuandai/4.html">查看详细 ></a></div>
-        </div>
-
-        <div class="clear"></div>
-      </div>
-    </div>
-  </div>
-  <div class="index_chosen">
-    <div class="center">
-      <div class="chosen_title">Product 精选产品</div>
-      <div class="wrap">
-        <div class="index_nav">
-          <div class="t">产品中心</div>
-          <div class="nav_list"> <img src="/skin/images/index_ico_0.jpg" /> <a href="/a/products/yidongdianyuan/">移动电源</a> </div>
-          <div class="nav_list"> <img src="/skin/images/index_ico_1.jpg" /> <a href="/a/products/shujuxian/">数据线</a> </div>
-          <div class="nav_list"> <img src="/skin/images/index_ico_2.jpg" /> <a href="/a/products/lanyayinxiang/">蓝牙音箱</a> </div>
-          <div class="nav_list"> <img src="/skin/images/index_ico_3.jpg" /> <a href="/a/products/zhinenzipaiqi/">智能自拍器</a> </div>
-          <div class="nav_list"> <img src="/skin/images/index_ico_4.jpg" /> <a href="/a/products/zhinenchuandai/">智能穿戴</a> </div> </div>
-        <div class="index_news">
-          <div class="t">新闻中心</div>
-          <div class="news_list"><a href="/a/xinwenzhongxin/16.html">车充使用不当就成电子产品杀手！</a> </div>
-<div class="news_list"><a href="/a/xinwenzhongxin/15.html">小米官网上线小米电视2S 48英寸</a> </div>
-<div class="news_list"><a href="/a/xinwenzhongxin/14.html">猎豹移动与APUS厮杀真相</a> </div>
-<div class="news_list"><a href="/a/xinwenzhongxin/13.html">Airwheel智能车成为便携低碳出行的</a> </div>
-<div class="news_list"><a href="/a/xinwenzhongxin/12.html">猎豹离职员工披露内幕：猎豹移动</a> </div>
-<div class="news_list"><a href="/a/xinwenzhongxin/11.html">爱尔威S系列思维车智能车全方位</a> </div>
+     </ul>
+    </dd>
+   </dl><dl class="tbox">
+    <dt><strong><a href="/a/liuyanzhongxin/">留言中心</a></strong><span class="more"><a href="/a/liuyanzhongxin/">更多...</a></span></dt>
+    <dd>
+     <ul class="d1 ico3">
+      
+     </ul>
+    </dd>
+   </dl><dl class="tbox">
+    <dt><strong><a href="/a/lianxiwomen/">联系我们</a></strong><span class="more"><a href="/a/lianxiwomen/">更多...</a></span></dt>
+    <dd>
+     <ul class="d1 ico3">
+      
+     </ul>
+    </dd>
+   </dl><dl class="tbox">
+    <dt><strong><a href="/a/xiazaizhongxin/">下载中心</a></strong><span class="more"><a href="/a/xiazaizhongxin/">更多...</a></span></dt>
+    <dd>
+     <ul class="d1 ico3">
+      
+     </ul>
+    </dd>
+   </dl> </div>
+  <!-- /listbox -->
  </div>
-        <div class="index_ad"> 
-        <div class='adlist'><a href='/a/products/yidongdianyuan/8.html' target='_blank'><img src='/uploads/allimg/150722/1-150H21419400-L.jpg' width="280" height="275"></a></div>
-<div class='adlist'><a href='/a/products/yidongdianyuan/7.html' target='_blank'><img src='/uploads/allimg/150722/1-150H2141S00-L.jpg' width="280" height="275"></a></div>
-<div class='adlist'><a href='/a/products/yidongdianyuan/6.html' target='_blank'><img src='/uploads/allimg/150722/1-150H2141G30-L.jpg' width="280" height="275"></a></div>
-<div class='adlist'><a href='/a/products/yidongdianyuan/5.html' target='_blank'><img src='/uploads/allimg/150722/1-150H21415210-L.jpg' width="280" height="275"></a></div>
-<div class='adlist'><a href='/a/products/zhinenchuandai/4.html' target='_blank'><img src='/uploads/allimg/150722/1-150H21413190-L.jpg' width="280" height="275"></a></div>
-<div class='adlist'><a href='/a/products/zhinenzipaiqi/3.html' target='_blank'><img src='/uploads/allimg/150722/1-150H21412130-L.jpg' width="280" height="275"></a></div>
- </div>
+ <!-- /pleft -->
+ <div class="pright">
+  <div class="usercenter">
+   <dl class="tbox light">
+    <dt class='light'> <strong>互动中心</strong> <span class="label"> <a href="#" _for="uc_digg">踩踩</a> <a href="#" _for="uc_comment">评论</a> <a href="#" _for="uc_member">会员</a> </span> </dt>
+    <dd id="loading"> 正在载入,请稍候... </dd>
+    <dd id="uc_digg">
+     <ul class="f1">
+      
+     </ul>
+    </dd>
+    <!-- /uc_digg -->
+    <dd id="uc_comment">
+     <ul class="f2">
+      
+     </ul>
+    </dd>
+    <!-- /uc_comment -->
+    <dd id="uc_member" >
+     <div id="_userlogin">
+      <div class="userlogin">
+       <form name="userlogin" action="/member/index_do.php" method="POST">
+        <input type="hidden" name="fmdo" value="login" />
+        <input type="hidden" name="dopost" value="login" />
+        <input type="hidden" name="keeptime" value="604800" />
+        <div class="fb"><span>用户名:</span>
+         <input type="text" name="userid" size="20" class="ipt-txt" />
+        </div>
+        <div class="fb"><span>密码:</span>
+         <input type="password" name="pwd" size="20" class="ipt-txt" />
+        </div>
+        
+        <div class="submit">
+         <button type="submit" class="btn-1">登录</button>
+         <a href="/member/index_do.php?fmdo=user&dopost=regnew" >注册帐号</a> <a href="/member/resetpassword.php">忘记密码?</a> </div>
+       </form>
       </div>
-    </div>
+     </div>
+     <!-- /userlogin -->
+     <script language="javascript" type="text/javascript">CheckLogin();</script>
+     <div class="latestlogin"> <strong>最近登陆的会员</strong>
+      <ul class="e7">
+       
+      </ul>
+     </div>
+     <!-- /latestlogin -->
+    </dd>
+    <!-- /uc_member -->
+   </dl>
   </div>
+  <!-- /usercenter -->
+  <div id="rightAD1" style="margin:10px auto"><!-- 250x250启用SSP 开始 --><script type="text/javascript">var _mda_place_id ="58bcc82381892";</script><script type="text/javascript" src="http://place.ssp.desdev.cn/pageplace/show.js"></script><!-- 250x250启用SSP 结束 --></div>
+  <div class="commend mt1">
+   <dl class="tbox light">
+    <dt class='light'><strong>推荐内容</strong></dt>
+    <dd class='light'>
+     <ul class="c1 ico2">
+          <div id='dedecms'>
+    </div>
+
+     </ul>
+    </dd>
+   </dl>
+  </div>
+  <!-- /commend -->
+  <div id="rightAD1" style="margin:10px auto"><!-- 250x250普通 开始 --><script type="text/javascript">var _mda_place_id ="58bcc92e8b472";</script><script type="text/javascript" src="http://place.ssp.desdev.cn/pageplace/show.js"></script><!-- 250x250普通 结束 --></div>
+  <div class="hot mt1">
+   <dl class="tbox light">
+    <dt class='light'><strong>本月热点</strong></dt>
+    <dd class='light'>
+     <ul class="c1 ico2">
+      
+     </ul>
+    </dd>
+   </dl>
+  </div>
+  <div class="vote mt1">
+   <dl class="tbox light">
+    <dt class='light'><strong>投票调查</strong></dt>
+    <script language="javascript" src="/data/vote/vote_1.js"></script>
+   </dl>
+  </div>
+  <!-- /vote -->
+    <a href='http://2v.dedecms.com/' id='__dedeqrcode_1'>织梦二维码生成器</a>
+  <script type="text/javascript">
+  	var __dedeqrcode_id=1;
+  	var __dedeqrcode_aid=0;
+  	var __dedeqrcode_type='index';
+  	var __dedeqrcode_dir='/plus';
+  </script>
+  <script language="javascript" type="text/javascript" src="/plus/img/qrcode.js"></script>
+  
+ </div>
+ <!-- /pleft -->
 </div>
+<div class="flink w960 center clear">
+ <dl class="tbox">
+  <dt> <strong>友情链接</strong>
+	<span class="linklabel">
+		
+			<a href="#" _for="flink_1">综合网站</a> 
+		
+			<a href="#" _for="flink_2">娱乐类</a> 
+		
+			<a href="#" _for="flink_3">教育类</a> 
+		
+			<a href="#" _for="flink_4">计算机类</a> 
+		
+			<a href="#" _for="flink_5">电子商务</a> 
+		
+			<a href="#" _for="flink_6">网上信息</a> 
+		
+			<a href="#" _for="flink_7">论坛类</a> 
+		
+			<a href="#" _for="flink_8">其它类型</a> 
+		
+			<a href="#" _for="flink_999">织梦链</a> 
+		
+	</span>
+	<span class="more"> <a href="plus/flink.php">所有链接</a> | <a href="plus/flink_add.php">申请加入</a> </span> </dt>
+  
+  <dd id="flink_1">
+    <ul class="f5">
+		<li><a href='http://www.dede58.com' target='_blank'>织梦模板</a> </li><li><a href='http://www.dede58.com' target='_blank'>织梦源码</a> </li><li><a href='http://www.dede58.com' target='_blank'>技术支持</a> </li>
+    </ul>
+  </dd>
+  
+  <dd id="flink_2">
+    <ul class="f5">
+		
+    </ul>
+  </dd>
+  
+  <dd id="flink_3">
+    <ul class="f5">
+		
+    </ul>
+  </dd>
+  
+  <dd id="flink_4">
+    <ul class="f5">
+		
+    </ul>
+  </dd>
+  
+  <dd id="flink_5">
+    <ul class="f5">
+		
+    </ul>
+  </dd>
+  
+  <dd id="flink_6">
+    <ul class="f5">
+		
+    </ul>
+  </dd>
+  
+  <dd id="flink_7">
+    <ul class="f5">
+		
+    </ul>
+  </dd>
+  
+  <dd id="flink_8">
+    <ul class="f5">
+		
+    </ul>
+  </dd>
+  
+  <dd id="flink_999">
+    <ul class="f5">
+		<li><a href='http://ad.dedecms.com' target='_blank' title='DedeCMS广告'>DedeCMS广告</a></li><li><a href='http://service.dedecms.com' target='_blank' title='织梦客户服务中心'>
+织梦客户服务中心</a></li><li><a href='http://ask.dedecms.com' target='_blank' title='织梦问答'>
+织梦问答</a></li><li><a href='http://www.bufuzao.com' target='_blank' title='不浮躁'>
+不浮躁</a></li><li><a href='http://www.d8.cn' target='_blank' title='钓吧'>
+钓吧</a></li><li><a href='http://www.shougong.com' target='_blank' title='手工网'>
+手工网</a></li><li><a href='http://www.zixue.com' target='_blank' title='自学'>
+自学</a></li><li><a href='http://www.163it.com' target='_blank' title='163IT网'>
+163IT网</a></li><li><a href='http://www.jielu.com' target='_blank' title='捷路'>
+捷路</a></li><li><a href='http://www.q9.cn' target='_blank' title='宠物网'>
+宠物网</a></li><li><a href='http://www.bochao.com' target='_blank' title='播潮'>
+播潮</a></li><li><a href='http://www.35u.cn' target='_blank' title='35游戏'>
+35游戏</a></li><li><a href='http://www.carhome.cn' target='_blank' title='车之家'>
+车之家</a></li><li><a href='http://www.x8.cn' target='_blank' title='笑吧'>
+笑吧</a></li><li><a href='http://www.chubang.com' target='_blank' title='厨帮'>
+厨帮</a></li><li><a href='http://www.xinwen818.com' target='_blank' title='新闻扒一扒'>
+新闻扒一扒</a></li><li><a href='http://www.tznj.com' target='_blank' title='投资牛街'>
+投资牛街</a></li><li><a href='http://jun.2211.net' target='_blank' title='2211军事'>
+2211军事</a></li><li><a href='http://ls.2211.net' target='_blank' title='2211历史'>
+2211历史</a></li><li><a href='http://jk.2211.net' target='_blank' title='2211健康'>
+2211健康</a></li><li><a href='http://www.hq100.com' target='_blank' title='环球100热点网'>
+环球100热点网</a></li><li><a href='http://tools.dedecms.com' target='_blank' title='站长工具'>
+站长工具</a></li><li><a href='http://site.desdev.cn' target='_blank' title='DedeCMS建站中心'>
+DedeCMS建站中心</a></li><li><a href='http://help.dedecms.com' target='_blank' title='织梦CMS帮助中心'>
+织梦CMS帮助中心</a></li><li><a href='http://' target='_blank' title=''></a></li>
+    </ul>
+  </dd>
+  
+ </dl>
+</div>
+<!-- /flink -->
+<div id="footAD" style="margin:10px auto; width:726px"><!-- 728x90普通 开始 --><script type="text/javascript">var _mda_place_id ="58bce8309bc21";</script><script type="text/javascript" src="http://place.ssp.desdev.cn/pageplace/show.js"></script><!-- 728x90普通 结束 --></div>
 
 <div id="footer">
   <div class="center">
@@ -162,10 +432,6 @@ $(function(){
   </div>
 </div>
 
+<!-- /footer -->
 </body>
 </html>
-<script>
-$(function(){
-	changeMenu("menu_title", "menu_list");	
-})
-</script>

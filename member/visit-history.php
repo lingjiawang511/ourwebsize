@@ -33,4 +33,5 @@ $dlist->pageSize = 20;
 $dlist->SetParameter("dopost",$dopost);
 $dlist->SetTemplate(DEDEMEMBER.'/templets/visit-history.htm');
 $dlist->SetSource($query);
+$dlist->Display();Source($query);
 $dlist->Display();

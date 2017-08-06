@@ -42,7 +42,7 @@ body {
 			else
 			{
 				if(!in_array($fielddata[1],$allowhtml)){
-					$row[$field] = htmlspecialchars($row[$field]);
+					$row[$field] = dede_htmlspecialchars($row[$field]);
 					$row[$field] = "<input type='text' name='".$field."' value='".$row[$field]."'/>";
 				}
 			}
@@ -62,12 +62,6 @@ body {
 			              </td>
           </tr>
         </table>
-	  </form>
-	  </td>
-  </tr>
-</table>
-</body>
-</html>  </table>
 	  </form>
 	  </td>
   </tr>

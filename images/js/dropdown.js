@@ -148,4 +148,9 @@ this.shimobject=document.getElementById("iframeshim")
 }
 }
 
+}form.Microsoft.Alpha(style=0,opacity=0)" frameBorder="0" scrolling="no"></IFRAME>')
+this.shimobject=document.getElementById("iframeshim") 
+}
+}
+
 }
